@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="forms exercise assignment">
+    <title>Forms Exercise</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Customer Experience Survey</legend>
+        <label for="storeNumber">Store Number</label>
+            <select name="" id="storeNumber">
+                <option value="3109">3109</option>
+                <option value="2421">2421</option>
+                <option value="5357">5357</option>
+            </select>
+            <fieldset>
+                <legend>When you visited</legend>
+                <label for="dateVisited">Date Visited</label>
+                <input type="date" id="dateVisited" value="08-23-2021">
+    <br>            
+                <label for="time">Time</label>
+                <input type="time" id="Time" value="06:49 AM">
+            </fieldset> 
+            <form>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName">
+            <br>    
+                <label for="userEmail">User Email:</label>
+                <input type="email" id="userEmail">
+            </form>
+            <fieldset>
+                <legend>Gender</legend>
+                <div>
+                    <input type="radio" name="Male" id="Gender" value="Male">
+                    <label for="Male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="Female" id="Gender" value="Female">
+                    <label for="Female">Female</label>
+                </div>
+            </fieldset>
+            <label for="userExperience">Tell us about your experience:</label>
+            <br>
+            <textarea id="userExperience" cols="20" rows="2" placeholder=""></textarea>
+            <br>
+            <label for="visitFrequency">Times visited in the last month:</label>
+            <br>
+            <input type="number" name="visitFrequency" id="visitFrequency"  step="1">
+            <br>
+            <input type="checkbox"  name="contact" id="contact">
+            <label for="contact">Please check the box if you would be wiling to be contacted about your experience</label>
+            <br>
+            <input type="submit">
+        </fieldset>   
+    </form>    
+</body>
+</html>
