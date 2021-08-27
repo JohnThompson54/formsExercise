@@ -12,7 +12,8 @@
         <fieldset>
             <legend>Customer Experience Survey</legend>
         <label for="storeNumber">Store Number</label>
-            <select name="" id="storeNumber">
+            <select name="store" id="storeNumber">
+                <option hidden=>Select A Store</option>
                 <option value="3109">3109</option>
                 <option value="2421">2421</option>
                 <option value="5357">5357</option>
@@ -20,7 +21,7 @@
             <fieldset>
                 <legend>When you visited</legend>
                 <label for="dateVisited">Date Visited</label>
-                <input type="date" id="dateVisited">
+                <input type="date" id="dateVisited" min="2021-01-01" max="2021-12-31">
     <br>            
                 <label for="time">Time</label>
                 <input type="time" id="Time" value="06:49 AM">
@@ -35,11 +36,11 @@
             <fieldset>
                 <legend>Gender</legend>
                 <div>
-                    <input type="radio" name="Male" id="Gender" value="Male">
+                    <input type="radio" name="Gender" id="Male" value="Male">
                     <label for="Male">Male</label>
                 </div>
                 <div>
-                    <input type="radio" name="Female" id="Gender" value="Female">
+                    <input type="radio" name="gender" id="Female" value="Female" checked>
                     <label for="Female">Female</label>
                 </div>
             </fieldset>
@@ -49,11 +50,21 @@
             <br>
             <label for="visitFrequency">Times visited in the last month:</label>
             <br>
-            <input type="number" name="visitFrequency" id="visitFrequency"  step="1">
+            <input type="number" name="visitFrequency" id="visitFrequency" min="1" max="30">
             <br>
-            <input type="checkbox"  name="contact" id="contact">
-            <label for="contact">Please check the box if you would be wiling to be contacted about your experience</label>
+            <input type="checkbox"  name="contact" id="contact" required>
+        <div>    
+            <label for="contact">Please check the box if you would be willing to be contacted about your experience</label>
+        </div>    
             <br>
+            <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" minlength="5" maxlength="10">
+            <!-- also to set password length
+            pattern=".{5,10} title="Please enter a password that is 5 to 10 characters in length"" -->
+        </div>
+            <br>
+            <input type="reset">
             <input type="submit">
         </fieldset>   
     </form>    
